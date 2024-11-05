@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Alejandra</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <style>
         /* Estilos Generales */
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #e5e5e5;
+            font-family: 'Playfair Display', serif;
+            background-color: #f5f5f5;
             color: #111;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
 
         .container {
             max-width: 900px;
             text-align: center;
+            position: relative;
             padding: 20px;
+        }
+
+        /* Header */
+        .auth-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .auth-links a {
+            text-decoration: none;
+            color: #888;
+            transition: color 0.3s ease;
+        }
+
+        .auth-links a:hover {
+            color: #111;
         }
 
         /* Cabecera */
         .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 4rem;
             font-weight: 900;
             text-transform: uppercase;
             margin: 0;
         }
 
         .header p {
-            font-size: 1rem;
-            letter-spacing: 0.1rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.2rem;
             color: #666;
+            letter-spacing: 0.1rem;
+            margin-top: -10px;
         }
 
         /* Navbar superior */
@@ -44,33 +69,35 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            font-size: 0.9rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1rem;
             color: #666;
-            margin: 10px 0 30px;
+            margin: 20px 0 40px;
         }
 
         .navbar span, .navbar a {
             text-decoration: none;
             color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #111;
         }
 
         /* Contenido Principal */
         .main-content h2 {
-            font-size: 3.5rem;
+            font-size: 5rem;
             font-weight: 900;
             line-height: 1.2;
             margin: 20px 0;
-            font-family: 'Playfair Display', serif;
             text-transform: uppercase;
-        }
-
-        .main-content h2 span {
-            display: block;
         }
 
         /* Sección de descripción */
         .description {
-            font-size: 1rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.1rem;
             color: #444;
             margin: 20px 0;
             line-height: 1.6;
@@ -87,13 +114,31 @@
         }
 
         .buttons span {
-            font-size: 1rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.1rem;
             color: #666;
             font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .buttons span:hover {
+            color: #111;
+        }
+
+        /* Imagen en la esquina inferior derecha */
+        .corner-image {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         /* Footer */
         .footer {
+            font-family: 'Roboto Mono', monospace;
             font-size: 0.9rem;
             color: #666;
             margin-top: 40px;
@@ -102,6 +147,14 @@
 </head>
 <body>
     <div class="container">
+        <!-- Enlaces de autenticación -->
+        <div class="auth-links">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="letras.html">Letras</a>
+            <a href="fotos.html">Fotos</a>
+            <a href="prueba.html">Prueba</a>
+        </div>
+
         <!-- Encabezado con el nombre y rol -->
         <header class="header">
             <h1>Alejandra Yanez</h1>
@@ -119,17 +172,15 @@
         <!-- Contenido principal -->
         <main class="main-content">
             <h2>
-                <span>A Creative Composer /</span>
-                <span>Random 17 y/o</span>
-                <span>Born & Raised</span>
-                <span>In Sonora, MX</span>
+                A Creative Composer /<br>
+                Born & Raised<br>
+                In Sonora, MX
             </h2>
         </main>
 
         <!-- Descripción breve -->
         <section class="description">
             <p>Quiero encontrar la conexión entre la humanidad y las pequeñas complejidades del arte, la ciencia y la música, manteniendo autenticidad en mi trabajo.</p>
-            <p>Gran parte de mi carrera se ha enfocado en explorar la creatividad y el potencial humano a través del arte.</p>
         </section>
 
         <!-- Botones de navegación inferiores -->
@@ -143,6 +194,9 @@
         <footer class="footer">
             <p>[ Sonora, MX ]</p>
         </footer>
+
+        <!-- Imagen en la esquina inferior derecha -->
+        <img src="https://via.placeholder.com/150" alt="Imagen de Alejandra" class="corner-image">
     </div>
 </body>
 </html>
