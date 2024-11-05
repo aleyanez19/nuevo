@@ -3,197 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista de Alejandra</title>
+    <title>Magazine Layout</title>
     <style>
-        /* Estilos generales */
+        /* General Style */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #111;
+            color: #333;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            padding: 0;
+            background-color: #f5f5f5;
         }
-
-        /* Contenedor principal para el swipe */
-        .magazine-container {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            width: 100vw;
-            height: 100vh;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
         }
-
-        /* Estilos para cada página */
-        .page {
-            scroll-snap-align: start;
-            flex: none;
-            width: 100vw;
-            height: 100vh;
+        
+        /* Sidebar Section */
+        .sidebar {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: #fff;
-            position: relative;
-            font-family: Arial, sans-serif;
+            font-size: 14px;
         }
-
-        /* Encabezado en cada página */
-        .page h1 {
-            font-size: 3rem;
-            font-weight: 900;
-            font-family: Arial Black, sans-serif;
-            margin: 0;
+        .sidebar .issue-info {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
-
-        .page p {
-            font-size: 1rem;
-            color: #666;
-            font-style: italic;
-            margin-top: -10px;
+        .sidebar .issue-number {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #c70000;
         }
-
-        /* Estilos de los textos principales */
-        .main-text {
-            font-size: 3rem;
-            font-weight: 700;
-            font-family: Arial Black, sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            line-height: 1.2;
-            margin: 20px 0;
+        .sidebar .link {
+            color: #c70000;
+            text-decoration: none;
+            margin: 5px 0;
         }
-
-        .main-text .italic {
-            font-style: italic;
-        }
-
-        /* Lugar reservado para la imagen */
-        .image-placeholder {
-            width: 300px;
-            height: 400px;
-            background-color: #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
-        }
-
-        /* Footer con los enlaces de navegación */
-        .footer {
-            font-size: 0.9rem;
-            color: #666;
-            font-family: Arial, sans-serif;
-            position: absolute;
-            bottom: 20px;
+        
+        /* Main Content Section */
+        .main-content {
             display: flex;
+            flex-direction: column;
+        }
+        .main-content .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #c70000;
+            margin-bottom: 20px;
+        }
+        .main-content .subtitle {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .main-content .content {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Images Section */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 15px;
+            margin-top: 20px;
         }
-
-        .footer span {
-            color: #888;
-            cursor: pointer;
-            transition: color 0.3s;
+        .image-grid a {
+            display: block;
+            background-color: #ddd;
+            padding: 60% 0; /* Aspect Ratio */
+            position: relative;
+            text-decoration: none;
         }
-
-        .footer span:hover {
-            color: #111;
+        .image-grid a:before {
+            content: "Image";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #555;
+        }
+        
+        /* Footer */
+        .footer {
+            grid-column: span 2;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <div class="issue-info">
+                <div class="issue-number">ISSUE #39</div>
+                <div>Date: June 2024</div>
+                <div>Editor: A. Smith</div>
+                <div>Photographer: L. Johnson</div>
+                <div>Designer: J. Doe</div>
+            </div>
+            <a href="#" class="link">07 | Desert Landscapes</a>
+            <a href="#" class="link">15 | Mountain Village</a>
+            <a href="#" class="link">21 | Deadvlei</a>
+            <a href="#" class="link">26 | Power Plant X</a>
+            <a href="#" class="link">33 | Kolmanskop Ghost Town</a>
+        </div>
 
-    <!-- Contenedor principal para el swipe -->
-    <div class="magazine-container">
-        
-        <!-- Página 1: Portada -->
-        <div class="page">
-            <h1>Alejandra Yanez</h1>
-            <p>Creative Director, Photographer</p>
-            <div class="main-text">
-                A Creative Composer /<br>
-                <span class="italic">Born & Raised</span><br>
-                In Sonora, MX
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <div class="title">The Decline of Kolmanskop</div>
+            <div class="subtitle">Namibia</div>
+            <div class="content">
+                <p>A strange, painful history fills the deserted town of Kolmanskop in Namibia. Once a booming town driven by the diamond rush, it has now been left to the sands of the Namib Desert.</p>
+                <p>As you walk through these sandy rooms, you can feel the echoes of a once vibrant place, now slowly swallowed by nature.</p>
             </div>
-            <div class="image-placeholder"></div>
-            <div class="footer">
-                <span>Portfolio</span>
-                <span>Letras</span>
-                <span>Fotos</span>
-                <span>Prueba</span>
-            </div>
-        </div>
-        
-        <!-- Página 2: Portfolio -->
-        <div class="page">
-            <h1>Portfolio</h1>
-            <div class="main-text">
-                Discover my<br>
-                <span class="italic">Creative Works</span>
-            </div>
-            <div class="image-placeholder"></div>
-            <div class="footer">
-                <span>Home</span>
-                <span>Letras</span>
-                <span>Fotos</span>
-                <span>Prueba</span>
-            </div>
-        </div>
-        
-        <!-- Página 3: Letras -->
-        <div class="page">
-            <h1>Letras</h1>
-            <div class="main-text">
-                Poetry &<br>
-                <span class="italic">Prose</span>
-            </div>
-            <div class="image-placeholder"></div>
-            <div class="footer">
-                <span>Home</span>
-                <span>Portfolio</span>
-                <span>Fotos</span>
-                <span>Prueba</span>
+
+            <!-- Images Grid Section -->
+            <div class="image-grid">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
             </div>
         </div>
 
-        <!-- Página 4: Fotos -->
-        <div class="page">
-            <h1>Fotos</h1>
-            <div class="main-text">
-                Capturing<br>
-                <span class="italic">Moments</span>
-            </div>
-            <div class="image-placeholder"></div>
-            <div class="footer">
-                <span>Home</span>
-                <span>Portfolio</span>
-                <span>Letras</span>
-                <span>Prueba</span>
-            </div>
+        <!-- Footer -->
+        <div class="footer">
+            [ Page 35 ]
         </div>
-        
-        <!-- Página 5: Prueba -->
-        <div class="page">
-            <h1>Prueba</h1>
-            <div class="main-text">
-                Experimental<br>
-                <span class="italic">Works</span>
-            </div>
-            <div class="image-placeholder"></div>
-            <div class="footer">
-                <span>Home</span>
-                <span>Portfolio</span>
-                <span>Letras</span>
-                <span>Fotos</span>
-            </div>
-        </div>
-
     </div>
-
 </body>
 </html>
