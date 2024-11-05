@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Alejandra</title>
-    <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <style>
         /* Estilos Generales */
         body {
-            font-family: 'Playfair Display', serif;
-            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             color: #111;
             margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            justify-content: left;
+            align-items: left;
+            height: 150vh;
             overflow: hidden;
         }
 
@@ -32,36 +30,38 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 1rem;
-            color: #888;
+            font-size: 0.9rem;
+            color: #110707;
             margin-bottom: 30px;
+            font-family: Arial, sans-serif;
         }
 
         .auth-links a {
             text-decoration: none;
-            color: #888;
+            color: #0e461b;
             transition: color 0.3s ease;
+            display: flex;
         }
 
         .auth-links a:hover {
             color: #111;
         }
 
-        /* Cabecera */
+        /* Encabezado principal */
         .header h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 900;
-            text-transform: uppercase;
+            font-family: Arial Black, sans-serif;
             margin: 0;
         }
 
         .header p {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #666;
-            letter-spacing: 0.1rem;
+            font-style: italic;
+            letter-spacing: 0.07rem;
             margin-top: -10px;
+            display: flex;
         }
 
         /* Navbar superior */
@@ -69,7 +69,6 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            font-family: 'Roboto Mono', monospace;
             font-size: 1rem;
             color: #666;
             margin: 20px 0 40px;
@@ -79,26 +78,33 @@
             text-decoration: none;
             color: inherit;
             transition: color 0.3s ease;
+            font-family: Arial, sans-serif;
         }
 
         .navbar a:hover {
             color: #111;
         }
 
-        /* Contenido Principal */
+        /* Texto Principal */
         .main-content h2 {
-            font-size: 5rem;
-            font-weight: 900;
+            font-size: 4rem;
+            font-weight: 700;
             line-height: 1.2;
+            font-family: Arial Black, sans-serif;
             margin: 20px 0;
             text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
 
-        /* Sección de descripción */
+        .main-content .italic {
+            font-style: italic;
+        }
+
+        /* Descripción breve */
         .description {
-            font-family: 'Roboto Mono', monospace;
+            font-family: Arial, sans-serif;
             font-size: 1.1rem;
-            color: #444;
+            color: #fff200;
             margin: 20px 0;
             line-height: 1.6;
             max-width: 600px;
@@ -114,11 +120,11 @@
         }
 
         .buttons span {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #666;
             font-weight: 600;
             transition: color 0.3s ease;
+            font-family: Arial, sans-serif;
         }
 
         .buttons span:hover {
@@ -138,10 +144,10 @@
 
         /* Footer */
         .footer {
-            font-family: 'Roboto Mono', monospace;
             font-size: 0.9rem;
             color: #666;
             margin-top: 40px;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
@@ -173,14 +179,14 @@
         <main class="main-content">
             <h2>
                 A Creative Composer /<br>
-                Born & Raised<br>
+                <span class="italic">Born & Raised</span><br>
                 In Sonora, MX
             </h2>
         </main>
 
         <!-- Descripción breve -->
         <section class="description">
-            <p>Quiero encontrar la conexión entre la humanidad y las pequeñas complejidades del arte, la ciencia y la música, manteniendo autenticidad en mi trabajo.</p>
+            <p>Bienvenute a mi nueva faceta</p>
         </section>
 
         <!-- Botones de navegación inferiores -->
