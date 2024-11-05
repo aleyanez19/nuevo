@@ -6,8 +6,10 @@
     <title>Portfolio de Alejandra</title>
     <style>
         /* Estilos Generales */
-        body {
-            font-family: Arial, sans-serif;
+           
+      body {
+        font-size: 64pt;
+        color: black; 
             background-color: #f0f0f0;
             color: #111;
             margin: 0;
@@ -16,7 +18,18 @@
             align-items: left;
             height: 150vh;
             overflow: hidden;
-        }
+      }
+
+      .myClass {
+        color: rgb(23, 5, 65);  
+        font-size: 16;
+      }
+
+      #myId {
+        background-color: rgb(89, 13, 13);
+        color: rgb(202, 187, 19);  
+        font-style: italic;
+      }
 
         .container {
             max-width: 900px;
@@ -33,7 +46,6 @@
             font-size: 0.9rem;
             color: #110707;
             margin-bottom: 30px;
-            font-family: Arial, sans-serif;
         }
 
         .auth-links a {
@@ -51,7 +63,6 @@
         .header h1 {
             font-size: 3rem;
             font-weight: 900;
-            font-family: Arial Black, sans-serif;
             margin: 0;
         }
 
@@ -78,7 +89,7 @@
             text-decoration: none;
             color: inherit;
             transition: color 0.3s ease;
-            font-family: Arial, sans-serif;
+            font-family: Roboto, sans-serif;
         }
 
         .navbar a:hover {
@@ -89,11 +100,10 @@
         .main-content h2 {
             font-size: 4rem;
             font-weight: 700;
-            line-height: 1.2;
-            font-family: Arial Black, sans-serif;
-            margin: 20px 0;
+            line-height: 0.8;
+            margin: 10px 0;
             text-transform: uppercase;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.01em;
         }
 
         .main-content .italic {
@@ -102,7 +112,7 @@
 
         /* Descripción breve */
         .description {
-            font-family: Arial, sans-serif;
+            font-family: 'Gill Sans', sans-serif;
             font-size: 1.1rem;
             color: #fff200;
             margin: 20px 0;
@@ -177,17 +187,16 @@
 
         <!-- Contenido principal -->
         <main class="main-content">
-            <h2>
+            <body>
                 A Creative Composer /<br>
                 <span class="italic">Born & Raised</span><br>
                 In Sonora, MX
-            </h2>
+            </body>
         </main>
 
         <!-- Descripción breve -->
         <section class="description">
-            <p>Bienvenute a mi nueva faceta</p>
-        </section>
+        <p class="myClass" id="#myId" Bienvenute a mi nueva faceta #myId></p>
 
         <!-- Botones de navegación inferiores -->
         <div class="buttons">
