@@ -71,10 +71,13 @@
         
         /* Images Section */
         .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 20px;
+            display: block;
+            background-color: #ddd;
+            padding: 60% 0; /* Mantiene la relación de aspecto */
+            position: relative;
+            text-decoration: none;
+            background-size: cover; /* Ajusta el tamaño de la imagen */
+            background-position: center; /* Centra la imagen */
         }
         .image-grid a {
             display: block;
@@ -84,7 +87,6 @@
             text-decoration: none;
         }
         .image-grid a:before {
-            content: "Image";
             position: absolute;
             top: 50%;
             left: 50%;
