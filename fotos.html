@@ -5,33 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style> body {
     margin: 0;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: black;
     background-color: white;
   }
   
   .portfolio-header {
-    text-align: center;
-    padding: 50px 20px;
-  }
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  padding: 50px 20px;
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   
   .welcome-text {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 30rem;
+    font-weight: 500;
   }
   
   .portfolio-text {
-    font-size: 3rem;
+    font-size: 38rem;
     font-style: italic;
-    margin: 0;
+    margin: -2;
   }
   
   .year {
-    font-size: 1rem;
+    font-size: 25rem;
     vertical-align: super;
   }
   
@@ -42,30 +49,17 @@
     line-height: 1.5;
   }
   
-  .gallery-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .photo-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .photo-gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .image-section img {
+    width: 100%;
+    height: 100 vh;
+    object-fit: cover;
+    display: block;
   }
   </style>
 <body>
   <div class="portfolio-header">
     <h1 class="welcome-text">welcome to my</h1>
-    <h1 class="portfolio-text">portfolio <span class="year">2023</span></h1>
+    <h1 class="portfolio-text">portfolio <span class="year">2024-5</span></h1>
     <div class="info">
       <p>DESIGN PORTFOLIO</p>
       <p>ALEJANDRA YANEZ</p>
@@ -80,7 +74,7 @@
     <div class="photo-gallery">
       <img src="imagess/sophie.png" alt="sophie">
       <img src="imagess/montana.png" alt="montana">
-      <img src="image3.jpg" alt="Foto 3">
+      <img src="imagess/montana.png" alt="Foto 3">
     </div>
   </div>
 </body>
