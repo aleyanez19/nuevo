@@ -116,9 +116,37 @@
     object-fit: contain;
     display: block;
   }
+    .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+    color: #666;
+    margin: 20px 0 40px;
+        }
+
+        .navbar span, .navbar a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+            font-family: Roboto, sans-serif;
+        }
+
+        .navbar a:hover {
+            color: #111;
+        }
 </style>
 
 <body>
+    <div class="container">
+        <!-- Enlaces de autenticación -->
+        <div class="auth-links">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="letras.html">Letras</a>
+            <a href="fotos.html">Fotos</a>
+            <a href="prueba.html">Prueba</a>
+        </div>
+        
     <div class="portfolio-header">
       <h1 class="welcome-text">welcome to my</h1>
       <h1 class="portfolio-text">portfolio <span class="year">2024-5</span></h1>
