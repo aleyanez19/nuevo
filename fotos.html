@@ -59,37 +59,22 @@
   }
 
   .info {
-    margin-top: 4px;
-    margin-bottom: 2px;
-    margin-left: 2px;
-    font-size: 10pt;
+    margin-top: 12px;
+    font-size: 0.5rem;
     letter-spacing: 0.05em;
-    line-height: 0.5;
+    line-height: 1.5;
   }
-
-  .gallery-section {
+    .gallery-section {
     position: relative;
-    z-index: 10;
-    overflow-y: auto;
-    height: 100vh;
+    z-index: 10; /* Aseguramos que las imágenes estén por encima del fondo */
   }
 
   .gallery-section img {
     width: 100%;
-    height: auto;  /* Dejamos que la altura sea automática para mantener las proporciones */
-    object-fit: contain; /* Ajusta la imagen para que no se recorte y mantenga las proporciones */
+    height: 100vh; 
+    object-fit: cover;
     display: block;
   }
-
-  /* Nueva clase para "Fotos y ajustes" */
-  .gallery-section p {
-    font-size: 30pt;
-    font-weight: bold;
-    letter-spacing: -0.05em; /* Reducir el espacio entre caracteres */
-    line-height: 1.2; /* Reducir el espacio entre líneas */
-    margin-bottom: 20px; /* Espaciado debajo del texto */
-  }
-
   .navbar {
     display: flex;
     justify-content: center;
