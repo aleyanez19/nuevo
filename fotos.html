@@ -1,99 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
 <style>
-    .body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      color: black;
-      background-color: white;
-    }
-    .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1rem;
-    color: #666;
-    margin: 20px 0 40px;
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
   }
-    .portfolio-header {
-      text-align: center;
-      font-family: 'Inter', sans-serif;
-      padding: 50px 20px;
-      height: 100vh; /* Ocupa toda la pantalla */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      scroll-snap-align: start;
-      min-height: 80vh;
-      position: sticky;
-    }
-  
-    .welcome-text {
-      font-size: 4rem;
-      font-weight: 500;
-      font-family: 'Inter', sans-serif;
-    }
-  
-    .portfolio-text {
-      font-size: 6rem;
-      font-style: italic;
-      margin: -2;
-      font-family: 'Times New Roman', serif;
-    }
-  
-    .year {
-      font-size: 10rem;
-      vertical-align: super;
-    }
-  
-    .info {
-      margin-top: 12px;
-      font-size: 0.5rem;
-      letter-spacing: 0.05em;
-      line-height: 1.5;
-    }
-  
+
+  .portfolio-header {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  padding: 50px 20px;
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+  min-height: 80vh;
+  position: sticky;
+  z-index: 10;
+}
+
+  .welcome-text {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+
+  .portfolio-text {
+    font-size: 6rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+  }
+
     .gallery-section {
-      position: relative;
-      z-index: 10; /* Aseguramos que las imágenes estén por encima del fondo */
-    }
-  
-    .gallery-section img {
-      width: 100%;
-      height: 100vh; 
-      object-fit: contain; /* Cambié cover por contain para evitar que se recorten */
-      display: block;
-    }
-  </style>
-  <body>
-    <div class="navbar">
-      <!-- Enlaces de autenticación -->
-      <div class="auth-links">
-        <a href="portfolio.html">Portfolio</a>
-        <a href="letras.html">Letras</a>
-        <a href="index.html">Fotos</a>
-        <a href="prueba.html">Prueba</a>
+    position: relative;
+    z-index: 10; /* Aseguramos que las imágenes estén por encima del fondo */
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .gallery-section img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+    display: block;
+  }
+</style>
+
+<body>
+    <div class="portfolio-header">
+      <h1 class="welcome-text">welcome to my</h1>
+      <h1 class="portfolio-text">portfolio <span class="year">2024-5</span></h1>
+      <div class="info">
+        <p>DESIGN PORTFOLIO</p>
+        <p>ALEJANDRA YANEZ</p>
+        <p>aleyaneza@hotmail.com</p>
+        <p>( INNOVATOR )</p>
+        <p>SISRI.APP /Sisri</p>
       </div>
-  
-      <div class="portfolio-header">
-        <h1 class="welcome-text">welcome to my</h1>
-        <h1 class="portfolio-text">portfolio <span class="year">2024-5</span></h1>
-        <div class="info">
-          <p>DESIGN PORTFOLIO</p>
-          <p>ALEJANDRA YANEZ</p>
-          <p>aleyaneza@hotmail.com</p>
-          <p>( INNOVATOR )</p>
-          <p>SISRI.APP /Sisri</p>
-        </div>
-      </div>
-  
-      <div class="gallery-section">
-        <!-- Agrega tus imágenes o contenido aquí -->
-        <p>Fotos y ajustes</p>
-        <div class="photo-gallery">
-          <img src="imagess/sophie.png" alt="sophie">
-          <img src="imagess/montana.png" alt="montana">
-          <img src="imagess/cactus.png" alt="Foto 3">
-        </div>
+    </div>
+    <div class="gallery-section">
+      <!-- Agrega tus imágenes o contenido aquí -->
+      <p>Scroll para ver más fotos</p>
+      <div class="photo-gallery">
+        <img src="imagess/sophie.png" alt="sophie">
+        <img src="imagess/montana.png" alt="montana">
+        <img src="imagess/cactus.png" alt="Foto 3">
       </div>
     </div>
   </body>
