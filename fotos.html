@@ -70,14 +70,14 @@
   .gallery-section {
     position: relative;
     z-index: 10;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 100vh;
   }
 
   .gallery-section img {
     width: 100%;
-    height: 100vh; /* Asegura que las imágenes ocupen toda la altura de la pantalla */
-    object-fit: cover; /* Ajusta las imágenes para cubrir el área sin perder proporciones */
+    height: auto;  /* Dejamos que la altura sea automática para mantener las proporciones */
+    object-fit: contain; /* Ajusta la imagen para que no se recorte y mantenga las proporciones */
     display: block;
   }
 
