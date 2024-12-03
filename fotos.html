@@ -1,12 +1,19 @@
 <style>
-    body {
+    .body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
       color: black;
       background-color: white;
     }
-  
+    .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+    color: #666;
+    margin: 20px 0 40px;
+  }
     .portfolio-header {
       text-align: center;
       font-family: 'Inter', sans-serif;
@@ -57,4 +64,37 @@
       display: block;
     }
   </style>
+  <body>
+    <div class="navbar">
+      <!-- Enlaces de autenticación -->
+      <div class="auth-links">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="letras.html">Letras</a>
+        <a href="index.html">Fotos</a>
+        <a href="prueba.html">Prueba</a>
+      </div>
   
+      <div class="portfolio-header">
+        <h1 class="welcome-text">welcome to my</h1>
+        <h1 class="portfolio-text">portfolio <span class="year">2024-5</span></h1>
+        <div class="info">
+          <p>DESIGN PORTFOLIO</p>
+          <p>ALEJANDRA YANEZ</p>
+          <p>aleyaneza@hotmail.com</p>
+          <p>( INNOVATOR )</p>
+          <p>SISRI.APP /Sisri</p>
+        </div>
+      </div>
+  
+      <div class="gallery-section">
+        <!-- Agrega tus imágenes o contenido aquí -->
+        <p>Fotos y ajustes</p>
+        <div class="photo-gallery">
+          <img src="imagess/sophie.png" alt="sophie">
+          <img src="imagess/montana.png" alt="montana">
+          <img src="imagess/cactus.png" alt="Foto 3">
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
