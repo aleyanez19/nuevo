@@ -9,81 +9,44 @@
 </head>
 
 <style>
-  body {
-        font-size: 50pt;
-        color: black; 
-        font-size: 88pt;
-    background-color: #f0f0f0;
-    color: #111;
+  html, body {
     margin: 0;
-    width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
-    overflow: auto;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+  }
 
-      }
-
-      .myClass {
-        color: rgb(23, 5, 65);  
-        font-size: 16;
-      }
-
-      #myId {
-        background-color: rgb(89, 13, 13);
-        color: rgb(202, 187, 19);  
-        font-style: italic;
-      }
-
-        .container {
-            max-width: 900px;
-            text-align: center;
-            position: relative;
-            padding: 20px;
-        }
-
-        /* Header */
-        .auth-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            font-size: 0.9rem;
-            color: #110707;
-            margin-bottom: 30px;
-        }
-
-        .auth-links a {
-            text-decoration: none;
-            color: #0e461b;
-            transition: color 0.3s ease;
-            display: flex;
-        }
-
-        .auth-links a:hover {
-            color: #111;
-        }
-
+  .container {
+    max-width: 900px;
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto; /* Centra el contenedor */
+  }
 
   .portfolio-header {
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  padding: 50px 20px;
-  height: 100vh; /* Ocupa toda la pantalla */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  scroll-snap-align: start;
-  min-height: 80vh;
-  position: sticky;
-  z-index: 10;
-}
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 50px 20px;
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+    min-height: 80vh;
+    position: sticky;
+    z-index: 10;
+  }
 
   .welcome-text {
     font-size: 88pt;
-        color: black; 
-        font-size: 88pt;
-    background-color: #f0f0f0;
     color: #111;
     margin: 0;
-    width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
-    overflow: auto;
   }
 
   .portfolio-text {
@@ -107,49 +70,52 @@
     letter-spacing: 0.05em;
     line-height: 0.5;
   }
-    .gallery-section {
+
+  .gallery-section {
     position: relative;
-    z-index: 10; /* Aseguramos que las imágenes estén por encima del fondo */
+    z-index: 10;
     overflow-y: scroll;
     height: 100vh;
   }
 
   .gallery-section img {
     width: 100%;
-    height: auto; 
+    height: auto;
     object-fit: contain;
     display: block;
+    margin-bottom: 20px;
   }
-    .navbar {
+
+  .navbar {
     display: flex;
     justify-content: center;
     gap: 20px;
     font-size: 1rem;
     color: #666;
     margin: 20px 0 40px;
-        }
+  }
 
-        .navbar span, .navbar a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.3s ease;
-            font-family: Roboto, sans-serif;
-        }
+  .navbar span, .navbar a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    font-family: Roboto, sans-serif;
+  }
 
-        .navbar a:hover {
-            color: #111;
-        }
+  .navbar a:hover {
+    color: #111;
+  }
 </style>
 
 <body>
-    <div class="container">
-        <!-- Enlaces de autenticación -->
-        <div class="auth-links">
-            <a href="portfolio.html">Portfolio</a>
-            <a href="letras.html">Letras</a>
-            <a href="fotos.html">Fotos</a>
-            <a href="prueba.html">Prueba</a>
-        </div>
+  <div class="container">
+    <!-- Enlaces de autenticación -->
+    <div class="auth-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="letras.html">Letras</a>
+      <a href="fotos.html">Fotos</a>
+      <a href="prueba.html">Prueba</a>
+    </div>
 
     <div class="portfolio-header">
       <h1 class="welcome-text">welcome to my</h1>
@@ -162,6 +128,7 @@
         <p>SISRI.APP /Sisri</p>
       </div>
     </div>
+
     <div class="gallery-section">
       <!-- Agrega tus imágenes o contenido aquí -->
       <p>Fotos y ajustes</p>
@@ -171,5 +138,6 @@
         <img src="imagess/cactus.png" alt="Foto 3">
       </div>
     </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>
