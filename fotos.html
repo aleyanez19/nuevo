@@ -9,27 +9,19 @@
 </head>
 
 <style>
-  html, body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f0f0f0;
+  .body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-
-  .container {
-    max-width: 900px;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
   }
 
   .portfolio-header {
     text-align: center;
     font-family: 'Inter', sans-serif;
-    padding: 50px 20px;
-    height: 100vh;
+    padding: 20px 20px;
+    height: 100vh; /* Ocupa toda la pantalla */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,13 +32,14 @@
   }
 
   .welcome-text {
-    font-size: 88pt;
-    color: #111;
-    margin: 0;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin: 0; /* Elimina el margen superior */
   }
 
   .portfolio-text {
-    font-size: 90pt;
+    font-size: 6rem;
     font-style: italic;
     margin-top: 0;
     margin-bottom: 20px;
@@ -54,45 +47,37 @@
   }
 
   .year {
-    font-size: 50pt;
+    font-size: 10rem;
     vertical-align: super;
   }
 
   .info {
     margin-top: 12px;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     letter-spacing: 0.05em;
     line-height: 1.5;
   }
-    .gallery-section {
+
+  .gallery-section {
     position: relative;
-    z-index: 10; /* Aseguramos que las imágenes estén por encima del fondo */
+    z-index: 10; /* Asegura que las imágenes estén por encima del fondo */
+    overflow-y: scroll; /* Activa el scroll vertical */
+    height: 100vh; /* Altura completa de la ventana */
   }
 
   .gallery-section img {
     width: 100%;
-    height: 100vh; 
-    object-fit: cover;
+    height: auto; 
+    object-fit: contain; /* La imagen mantendrá su proporción */
     display: block;
+    margin-bottom: 20px; /* Espaciado entre las imágenes */
   }
-  .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1rem;
-    color: #666;
-    margin: 20px 0 40px;
-  }
-
-  .navbar span, .navbar a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-    font-family: Roboto, sans-serif;
-  }
-
-  .navbar a:hover {
-    color: #111;
+  .container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
   }
 </style>
 
@@ -102,7 +87,7 @@
     <div class="auth-links">
       <a href="portfolio.html">Portfolio</a>
       <a href="letras.html">Letras</a>
-      <a href="index.html">Fotos</a>
+      <a href="index.html">Index</a>
       <a href="prueba.html">Prueba</a>
     </div>
 
