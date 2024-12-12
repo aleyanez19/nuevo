@@ -1,5 +1,5 @@
 import React from 'react';
-import { Magazine } from './components/Magazine';
+import { Magazine } from './Magazine';
 import { BookHeart } from 'lucide-react';
 
 function App() {
